@@ -1,5 +1,3 @@
-07.10 12:21 PM
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,275 +9,320 @@ index.html
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
         }
+
         body {
-            background-color: #faf7f2; /* Rich Luxury Cream */
-            color: #2c1a11; /* Deep Espresso Brown */
+            background-color: #f7f4ee; /* High-end Cream/Beige */
+            color: #21130b; /* Deep Rich Espresso */
+            font-family: 'Plus Jakarta Sans', sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
         }
+
         /* Hero Section */
         header {
-            background: linear-gradient(135deg, #3d2516, #21130b); /* Luxury Dark Brown */
+            background: linear-gradient(135deg, #2c1a11, #140b07); /* Dark Luxury Espresso */
             color: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
-            border-bottom: 4px solid #d4af37; /* Gold Accent */
+            border-bottom: 5px solid #d4af37;
             position: relative;
         }
+
         .brand-badge {
             background: #d4af37;
-            color: #21130b;
-            padding: 6px 18px;
-            border-radius: 20px;
+            color: #140b07;
+            padding: 8px 20px;
+            border-radius: 30px;
             font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        header h1 {
-            font-size: 3.2rem;
             font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-            color: #f7e7ce; /* Soft Champagne Gold */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 25px;
         }
+
+        header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 15px;
+            color: #fcefd2; /* Champagne Gold */
+            text-transform: uppercase;
+        }
+
         header p {
-            font-size: 1.25rem;
-            color: #dfcfc7;
-            max-width: 600px;
+            font-size: 1.35rem;
+            color: #e5d5cd;
+            max-width: 650px;
             margin: 0 auto;
+            font-weight: 500;
         }
-        /* Sticker Container Styling */
+
+        /* --- BIGGER & BETTER FLOATING STICKERS --- */
         .sticker-wrapper {
             position: relative;
+            width: 100%;
         }
+
         .sticker {
             position: absolute;
-            z-index: 10;
-            filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.15));
-            border: 3px solid #fff; /* White outline makes it look like a physical sticker */
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            max-width: 90px;
+            z-index: 100;
+            filter: drop-shadow(8px 12px 16px rgba(33,19,11,0.25));
+            border: 4px solid #fff; /* Thick white sticker border */
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            max-width: 150px; /* Big Size */
             height: auto;
-            pointer-events: none; /* Allows clicking through the sticker if needed */
         }
-        /* Floating Stickers Placements */
-        .sticker-1 { top: -40px; left: 5%; transform: rotate(-15deg); max-width: 100px; }
-        .sticker-2 { top: 250px; right: 3%; transform: rotate(12deg); max-width: 95px; }
-        .sticker-3 { bottom: 350px; left: 2%; transform: rotate(-10deg); max-width: 90px; }
-        .sticker-4 { bottom: 40px; right: 4%; transform: rotate(15deg); max-width: 90px; }
+
+        /* Brought them inwards from the extreme corners */
+        .sticker-1 { top: -60px; left: 12%; transform: rotate(-12deg); } /* Hair Heart */
+        .sticker-2 { top: 320px; right: 10%; transform: rotate(15deg); } /* Bratz Glasses */
+        .sticker-3 { top: 780px; left: 8%; transform: rotate(-8deg); }   /* Boy Praying */
+        .sticker-4 { bottom: 180px; right: 12%; transform: rotate(10deg); } /* Bratz Blonde */
+
         .container {
-            max-width: 760px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 780px;
+            margin: 60px auto;
+            padding: 0 25px;
             position: relative;
         }
-        /* Classy Gen-Z Cards */
+
+        /* Premium Bold Cards */
         .card {
             background: #fff;
-            padding: 35px;
-            border-radius: 24px;
-            box-shadow: 0 15px 35px rgba(61, 37, 22, 0.04);
-            margin-bottom: 35px;
-            border: 1px solid #eee5de;
+            padding: 45px 40px;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(33, 19, 11, 0.05);
+            margin-bottom: 45px;
+            border: 1px solid #ebdcd0;
         }
+
         .card h2 {
-            font-size: 1.6rem;
-            color: #3d2516;
-            margin-bottom: 20px;
-            font-weight: 700;
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            color: #2c1a11;
+            margin-bottom: 25px;
+            font-weight: 800;
             letter-spacing: -0.5px;
         }
-        /* Problem Badges */
+
+        /* Problem Tags */
         .problem-tag {
             display: inline-block;
-            background: #fdf2ee;
-            color: #a34c3d;
-            padding: 8px 16px;
+            background: #fff0eb;
+            color: #a84332;
+            padding: 10px 20px;
             border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin: 6px;
-            border: 1px solid #f7ded5;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 8px 5px;
+            border: 1px solid #f9ded5;
         }
+
         .solution-box {
-            background: #f7f2ee;
-            border-left: 4px solid #d4af37;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            font-weight: 500;
-            color: #3d2516;
+            background: #faf6f2;
+            border-left: 5px solid #d4af37;
+            padding: 25px;
+            border-radius: 16px;
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #2c1a11;
         }
-        /* Premium Product Display */
+
+        /* Product Grid */
         .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .product-card {
+            background: #fffbf7;
+            border: 1px solid #ebdcd0;
+            border-radius: 24px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(33, 19, 11, 0.08);
+            border-color: #d4af37;
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #140b07;
+            font-weight: 700;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #6e594f;
+        }
+
+        /* Story Section */
+        .story-text {
+            color: #523e33;
+            line-height: 1.9;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Luxury CTA Buttons */
+        .btn-group {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 35px;
         }
-        .product-card {
-            background: #faf7f5;
-            border: 1px solid #ebdcd0;
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(61, 37, 22, 0.05);
-        }
-        .product-icon {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
-        }
-        .product-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 8px;
-            color: #21130b;
-        }
-        .product-card p {
-            font-size: 0.95rem;
-            color: #6e594f;
-        }
-        /* The Visionary Story */
-        .story-text {
-            color: #5c463a;
-            line-height: 1.8;
-            font-size: 1.1rem;
-            font-weight: 400;
-        }
-        /* Premium Buttons */
-        .btn-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
+
         .btn {
             display: block;
             text-align: center;
-            padding: 18px;
-            background-color: #3d2516;
+            padding: 20px;
+            background-color: #2c1a11;
             color: #fff;
             text-decoration: none;
-            border-radius: 16px;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s;
-            box-shadow: 0 8px 25px rgba(61,37,22,0.15);
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(44,26,17,0.2);
+            letter-spacing: 0.5px;
         }
+
         .btn:hover {
-            background-color: #21130b;
-            transform: translateY(-2px);
+            background-color: #140b07;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(44,26,17,0.3);
         }
+
         .btn-whatsapp {
             background-color: #25D366;
-            box-shadow: 0 8px 25px rgba(37,211,102,0.15);
+            box-shadow: 0 10px 30px rgba(37,211,102,0.2);
         }
+        
         .btn-whatsapp:hover {
             background-color: #1ebd54;
+            box-shadow: 0 12px 35px rgba(37,211,102,0.3);
         }
+
         footer {
             text-align: center;
-            padding: 40px 20px;
-            background: #21130b;
-            color: #dfcfc7;
-            font-size: 0.9rem;
-            margin-top: 60px;
-            border-top: 2px solid #3d2516;
+            padding: 50px 20px;
+            background: #140b07;
+            color: #ebdcd0;
+            font-size: 0.95rem;
+            margin-top: 80px;
+            border-top: 3px solid #2c1a11;
         }
-        /* Hide stickers on very narrow screens to prevent overlap */
-        @media (max-width: 600px) {
-            .sticker {
-                max-width: 65px;
-            }
-            .sticker-1 { left: 2%; top: -20px; }
-            .sticker-2 { right: 1%; }
-            .sticker-3 { left: 1%; }
-            .sticker-4 { right: 1%; }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.6rem; }
+            .sticker { max-width: 100px; } /* Medium size for mobile */
+            .sticker-1 { left: 5%; top: -40px; }
+            .sticker-2 { right: 4%; top: 380px; }
+            .sticker-3 { left: 2%; top: 920px; }
+            .sticker-4 { right: 4%; bottom: 140px; }
+            .card { padding: 30px 20px; }
         }
     </style>
-    <!-- Modern Clean Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Ultra Bold Trendy & Body Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Wrapper containing floating stickers -->
+
     <div class="sticker-wrapper">
-        <!-- Sticker 1: Hair Heart -->
-        <img src="hair-heart.png" alt="Hair Heart Sticker" class="sticker sticker-1">
-        <!-- Sticker 2: Bratz Glasses -->
-        <img src="bratz-glasses.png" alt="Bratz Glasses Sticker" class="sticker sticker-2">
-        <!-- Sticker 3: Boy Praying -->
-        <img src="boy-praying.png" alt="Boy Praying Sticker" class="sticker sticker-3">
-        <!-- Sticker 4: Bratz Blonde -->
-        <img src="bratz-blonde.png" alt="Bratz Blonde Sticker" class="sticker sticker-4">
-        <!-- Hero Branding -->
+        <!-- Floating Stickers (Bigger & Centered) -->
+        <img src="hair-heart.png" alt="Hair Heart" class="sticker sticker-1">
+        <img src="bratz-glasses.png" alt="Bratz Style" class="sticker sticker-2">
+        <img src="boy-praying.png" alt="Tested Formula" class="sticker sticker-3">
+        <img src="bratz-blonde.png" alt="Aesthetic Vibe" class="sticker sticker-4">
+
+        <!-- Header -->
         <header>
             <div class="brand-badge">✨ 100% Pure & Lab Tested</div>
             <h1>Happy Haven Hair</h1>
-            <p>Premium, toxic-free clean formulation designed to elevate your hair roots.</p>
+            <p>Premium, toxic-free clean formulation engineered to radically elevate your hair roots.</p>
         </header>
+
         <div class="container">
-            <!-- Problem & Formulation Statement -->
+
+            <!-- Core Pitch -->
             <div class="card">
                 <h2>🛑 Target the Damage. Protect the Roots.</h2>
-                <p style="margin-bottom: 15px; color: #5c463a;">Modern lifestyles expose our hair to severe modern stressors. Happy Haven Hair is engineered specifically to undo the everyday damage caused by:</p>
+                <p style="margin-bottom: 20px; color: #523e33; font-size: 1.1rem;">Modern everyday stressors destroy your hair quality. Happy Haven Hair is specifically built to combat the friction caused by:</p>
                 <div>
-                    <span class="problem-tag">⚡ Hard Water Mineral Buildup</span>
+                    <span class="problem-tag">⚡ Hard Water Buildup</span>
                     <span class="problem-tag">🧪 Harsh Chemical Shampoos</span>
-                    <span class="problem-tag"> Pollution & Dirt Exposure</span>
-                    <span class="problem-tag">🦠 Scalp Sweat & Microbes</span>
+                    <span class="problem-tag">💨 Severe Sweat & Pollution</span>
+                    <span class="problem-tag">🦠 Scalp Microbes</span>
                 </div>
                 <div class="solution-box">
-                     <strong>The 6-10 Wash Promise:</strong> Formulated with zero harmful chemicals. By replacing synthetic toxins with pure ingredients, you will experience stronger hair roots and visible healthy growth within just 6 to 10 washes.
+                    🌱 **The 6-10 Wash Guarantee:** Zero hidden chemicals. By deeply nourishing follicles and removing synthetic buildup, you will see highly visible results and genuinely healthier roots in just 6 to 10 washes.
                 </div>
             </div>
-            <!-- The Collection Drop -->
+
+            <!-- Products -->
             <div class="card">
                 <h2>🛒 The Signature Drop</h2>
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-icon">🤎</div>
                         <h3>Pre-Hair Wash Serum</h3>
-                        <p>A heavy-duty prep oil designed to shield hair strands and deeply nourish follicles before cleansing.</p>
+                        <p>A powerhouse barrier treatment to protect strands and flood hair follicles with rich nutrients before you cleanse.</p>
                     </div>
                     <div class="product-card">
                         <div class="product-icon">🧼</div>
                         <h3>Pure Shampoo</h3>
-                        <p>An ultra-gentle, chemical-free clarifying shampoo that clears scalp buildup without stripping oils.</p>
+                        <p>An ultra-clarifying, sulfate-free blend that completely removes scalp debris without stripping moisture.</p>
                     </div>
                 </div>
             </div>
-            <!-- Brand Origins -->
+
+            <!-- Story -->
             <div class="card">
-                <h2> The Creative Mind</h2>
+                <h2>💡 The Vision</h2>
                 <p class="story-text">
-                    Frustrated by the cycle of persistent hair issues faced by today’s generation, <strong>Suraj</strong> envisioned a brand focused entirely on clean, thoroughly tested, and honest haircare solutions. Proudly conceptualized and launched out of Mhow, Indore, Happy Haven Hair bridges the gap between raw natural purity and modern aesthetic standards.
+                    Frustrated by the continuous cycle of hair damage faced by Gen-Z, **Suraj** designed a brand focused entirely on clean, lab-tested, and transparent haircare. Launched out of Mhow, Indore, Happy Haven Hair seamlessly blends clinical purity with elite Gen-Z aesthetic standards.
                 </p>
             </div>
-            <!-- Action Area -->
-            <div class="card" style="text-align: center;">
-                <h2>🛍️ Secure Your Hair Routine</h2>
-                <p style="color: #6e594f;">Consult directly with us or drop a message to reserve your custom batch order.</p>
+
+            <!-- Call to Action -->
+            <div class="card" style="text-align: center; border: 2px solid #d4af37;">
+                <h2>🛍️ Upgrade Your Hair Routine</h2>
+                <p style="color: #6e594f; font-size: 1.1rem; margin-bottom: 10px;">Connect directly with us to secure your premium custom batch.</p>
                 <div class="btn-group">
-                    <a href="https://wa.me/916266342998?text=Hello%20Happy%20Haven%20Hair!%20I%20would%20like%20to%20order%20the%20haircare%20products." target="_blank" class="btn btn-whatsapp"> Order via WhatsApp</a>
-                    <a href="tel:+916266342998" class="btn"> Call For Inquiry</a>
+                    <a href="https://wa.me/916266342998?text=Hello%20Happy%20Haven%20Hair!%20I%20want%20to%20place%20an%20order%20for%20the%20premium%20haircare%20kit." target="_blank" class="btn btn-whatsapp">💬 Order via WhatsApp</a>
+                    <a href="tel:+916266342998" class="btn">📞 Call For Inquiry</a>
                 </div>
             </div>
+
         </div>
     </div>
+
     <!-- Footer -->
     <footer>
-        <p> Based in Mhow, Indore, India</p>
-        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Happy Haven Hair. All Rights Reserved.</p>
+        <p>📍 Crafted in Mhow, Indore, India</p>
+        <p style="margin-top: 15px; font-size: 0.85rem; opacity: 0.4;">&copy; 2026 Happy Haven Hair. Engineered for the next gen.</p>
     </footer>
+
 </body>
 </html>
+
 
